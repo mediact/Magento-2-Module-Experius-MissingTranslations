@@ -1,0 +1,10 @@
+<?php
+/** @var Experius\MissingTranslations\Block\Adminhtml\Translation\Edit\BaseUrl $block */
+?>
+<script>
+    require([
+        'mage/url'
+    ], function(url) {
+        return url.setBaseUrl('<?= $block->escapeUrl($block->getBaseUrl()) ?>');
+    });
+</script>

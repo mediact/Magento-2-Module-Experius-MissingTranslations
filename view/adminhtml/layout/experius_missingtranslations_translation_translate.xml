@@ -3,6 +3,7 @@
 	<update handle="styles"/>
 	<body>
 		<referenceContainer name="content">
+			<block class="Experius\MissingTranslations\Block\Adminhtml\Translation\Edit\BaseUrl" name="base_url" template="Experius_MissingTranslations::base_url.phtml" />
 			<uiComponent name="experius_translation_form_translate"/>
 		</referenceContainer>
 	</body>
