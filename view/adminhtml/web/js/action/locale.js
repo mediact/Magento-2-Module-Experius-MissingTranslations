@@ -10,7 +10,7 @@ define(
 
         return function (deferred, localeCode) {
             var param = 'ajax=1';
-            var url = urlBuilder.build("/experius_missingtranslations/ajax/phrases/locale/"+localeCode);
+            var url = urlBuilder.build("experius_missingtranslations/ajax/phrases/locale/"+localeCode);
             $.ajax({
                 showLoader: true,
                 url: url,
