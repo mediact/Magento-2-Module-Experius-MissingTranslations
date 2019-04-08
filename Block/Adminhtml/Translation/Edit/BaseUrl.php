@@ -43,7 +43,7 @@ class BaseUrl extends Template
          * To ensure this script works, this will be removed as it's not part of
          * the actual admin base URL
          */
-        if (substr($adminUrl, -6) === 'admin/' && substr_count($adminUrl, 'admin/') > 1) {
+        if (substr($adminUrl, -6) === 'admin/') {
             $adminUrl = substr($adminUrl, 0, -6);
         }
 
