@@ -88,6 +88,9 @@ class TranslationCollector
 
         $insertionCount = $this->createNewTranslations($translations, $storeId, $locale);
 
+        // MediaCT customization to make sure the translations keep working.
+        $this->helper->updateJsTranslationJsonFiles($locale);
+
         $this->emulation->stopEnvironmentEmulation();
         return $insertionCount;
     }
